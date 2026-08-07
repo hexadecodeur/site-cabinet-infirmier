@@ -1,4 +1,4 @@
-export const SITE_URL = 'https://cabinetinfirmiervalence81.vercel.app';
+export const SITE_URL = 'https://cabinetinfirmiervalence81.fr';
 export const SITE_NAME = "Cabinet Infirmier Valence d'Albigeois";
 export const DEFAULT_OG_IMAGE = `${SITE_URL}/og-image.jpg`;
 
