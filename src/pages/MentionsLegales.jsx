@@ -59,9 +59,27 @@ function MentionsLegales() {
       </section>
 
       <section className="legal-section">
-        <h2>4. Hébergement</h2>
+        <h2>4. Hébergement et nom de domaine</h2>
         <p>
-          Le site est hébergé par :
+          Site accessible à l&apos;adresse :{' '}
+          <a href="https://cabinetinfirmiervalence81.fr/">
+            https://cabinetinfirmiervalence81.fr/
+          </a>
+        </p>
+        <p>
+          <strong>Nom de domaine</strong> réservé auprès de :
+          <br />
+          OVH SAS
+          <br />
+          2 rue Kellermann — 59100 Roubaix — France
+          <br />
+          Site :{' '}
+          <a href="https://www.ovhcloud.com" target="_blank" rel="noopener noreferrer">
+            ovhcloud.com
+          </a>
+        </p>
+        <p>
+          <strong>Hébergement</strong> du site :
           <br />
           <strong>Vercel Inc.</strong>
           <br />

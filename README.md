@@ -1,47 +1,71 @@
 # Cabinet Infirmier Valence d'Albigeois
 
-Bienvenue sur le **site officiel** du Cabinet Infirmier de Valence d'Albigeois (81), développé par **Hello_Dev0ps**.
+Site vitrine du **Cabinet infirmier de la Place du Foirail** (SCM) à Valence d'Albigeois (81), développé par **Hello_Dev0ps**.
 
-Ce site présente les services proposés par notre équipe d'infirmiers libéraux, les missions du cabinet, ainsi que des outils pratiques pour nos patients et partenaires.
+**Site :** [https://cabinetinfirmiervalence81.fr/](https://cabinetinfirmiervalence81.fr/)
 
-## Stack Technique
+Présentation de l'équipe, des missions (PRADO Cardio, ICOPE…), des coordonnées et des ressources utiles pour les patients.
 
-- **Frontend** : React + Vite
-- **Routing** : React Router DOM
-- **Design** : CSS Modules / Google Fonts (Poppins)
-- **Hébergement** : Vercel
-- **SEO** : Balises meta dynamiques + Open Graph + JSON-LD + sitemap.xml
-- **Analytics** : Google Analytics v4 + Vercel Analytics
+## Stack
 
-## Pages disponibles
+| Couche | Techno |
+|--------|--------|
+| Frontend | React 19 + Vite |
+| Routing | React Router DOM |
+| Styles | CSS global (Poppins via Google Fonts) |
+| SEO | Meta dynamiques (`react-helmet-async`), Open Graph, JSON-LD, sitemap |
+| Analytics | Google Analytics 4 (après consentement) + Vercel Analytics |
+| Package manager | pnpm |
+| Domaine | OVH — `cabinetinfirmiervalence81.fr` |
+| Hébergement | Vercel |
 
-- `/` : Page d’accueil
-- `/equipe` : Présentation de l’équipe
-- `/missions` : Nos missions
-- `/contact` : Coordonnées + Carte Google Maps intégrée
-- `/liensutiles` : Liens médicaux utiles (Ameli, HAS, ICOPE…)
-- `/mentions-legales` : Mentions légales et RGPD
+## Démarrage
 
-## RGPD Friendly
+```bash
+pnpm install
+pnpm dev        # serveur de développement
+pnpm build      # build production → dist/
+pnpm preview    # prévisualiser le build
+pnpm test       # Vitest
+```
 
-Aucune donnée personnelle n’est collectée sans consentement.
-Les cookies ne sont utilisés que pour des fins statistiques (Google Analytics).
-Consentement utilisateur géré via une bannière dédiée.
+## Pages
 
-## SEO & Accessibilité
+| Route | Contenu |
+|-------|---------|
+| `/` | Accueil, CTAs contact, météo locale |
+| `/equipe` | Présentation de l'équipe |
+| `/missions` | Soins, PRADO Cardio, ICOPE, certificat de décès |
+| `/contact` | Téléphone, email, adresse, carte Google Maps |
+| `/liensutiles` | Liens officiels (ARS, Ameli, etc.) |
+| `/mentions-legales` | Mentions légales LCEN + RGPD |
 
-- Titre personnalisé de l’onglet
-- Description claire pour Google
-- Favicon custom
-- Structure balisée correctement
-- Open Graph pour les partages réseaux
-- Sitemap et JSON-LD pour les moteurs de recherche
+## Fonctionnalités
 
-## Bonus
+- Navigation responsive (menu burger mobile)
+- Bannière cookies : accepter / refuser Google Analytics
+- SEO par page (title, description, canonical, OG/Twitter)
+- Images optimisées (WebP) + image Open Graph dédiée
+- Suivi des clics contact (tel / mailto / Maps) si GA accepté
+- Mentions légales complètes (SCM, SIRET, RPPS, hébergeur, domaine)
 
-- Widget météo local à Valence d’Albigeois
-- QR Code pour laisser un avis Google (à venir)
-- Responsive Design mobile-friendly
-- Footer signature : “Site créé par Hello_Dev0ps”
+## RGPD
+
+- Pas de formulaire de collecte de données de santé
+- Google Analytics chargé **uniquement après consentement**
+- Choix mémorisé en `localStorage`
+- Détails dans `/mentions-legales`
+
+## Structure
+
+```
+src/
+  analytics/     # Chargement GA + consentement
+  components/    # Header, Footer, Seo, CookieBanner…
+  constants/     # Contact, meta SEO
+  pages/         # Pages de l'app
+  styles/        # global, layout, components
+public/          # favicon, sitemap, robots, og-image
+```
 
 ---
