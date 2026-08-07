@@ -44,8 +44,8 @@ function Contact() {
           title="Cabinet Infirmier Valence"
           src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2869.027563046941!2d2.405510376683401!3d44.020824928575806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1748940664271!5m2!1sfr!2sfr"
           width="100%"
-          height="400"
-          style={{ border: 0 }}
+          height="100%"
+          style={{ border: 0, minHeight: 260 }}
           allowFullScreen=""
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"

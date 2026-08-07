@@ -63,6 +63,16 @@
   gap: 0.75rem;
 }
 
+@media (max-width: 768px) {
+  .btn-group {
+    flex-direction: column;
+  }
+
+  .btn-group .btn {
+    width: 100%;
+  }
+}
+
 /* Cards */
 .card {
   background-color: var(--color-surface);
@@ -74,7 +84,7 @@
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr));
   gap: 1rem;
 }
 
@@ -118,6 +128,17 @@
   }
 }
 
+@media (max-width: 768px) {
+  .hero {
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .page-intro {
+    margin-bottom: 1.5rem;
+  }
+}
+
 /* Contact cards */
 .contact-cards {
   display: grid;
@@ -156,9 +177,24 @@
 
 .contact-card-value {
   font-weight: 600;
-  font-size: 1.35rem;
+  font-size: clamp(1.1rem, 0.4vw + 1rem, 1.35rem);
   margin: 0;
   color: var(--color-primary);
+  word-break: break-word;
+}
+
+@media (max-width: 768px) {
+  .contact-cards {
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-card {
+    padding: 1rem;
+  }
+
+  .contact-card-value {
+    font-size: 1.05rem;
+  }
 }
 
 /* Accordion */
@@ -267,11 +303,15 @@
   border-radius: var(--radius);
   overflow: hidden;
   border: 1px solid var(--color-border);
+  aspect-ratio: 16 / 10;
+  min-height: 260px;
 }
 
 .map-container iframe {
   display: block;
   width: 100%;
+  height: 100%;
+  min-height: 260px;
 }
 
 .meteo-sidebar {
@@ -308,7 +348,33 @@
   border-radius: var(--radius);
   margin-bottom: 2rem;
   box-shadow: var(--shadow-sm);
-  max-width: 400px;
+  max-width: min(400px, 100%);
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .missions-image {
+    margin-bottom: 1.5rem;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .accordion-trigger {
+    font-size: 1.05rem;
+    padding: 0.875rem 1rem;
+  }
+
+  .accordion-content {
+    padding: 0 1rem 1rem;
+  }
+
+  .link-card {
+    padding: 1rem 1.125rem;
+    font-size: 1.05rem;
+  }
 }
 
 /* Legal page */
