@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
+  "packageManager": "pnpm@10.28.2",
   "scripts": {
     "dev": "vite",
     "start": "vite",
@@ -11,8 +12,10 @@
     "test": "vitest run"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "react-helmet-async": "^3.0.0",
     "react-router-dom": "^7.6.0"
   },
   "devDependencies": {

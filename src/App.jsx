@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useEffect } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import Accueil from './pages/Accueil';
 import Equipe from './pages/Equipe';
 import Missions from './pages/Missions';
@@ -8,16 +9,17 @@ import Header from './components/Header';
 import LiensUtiles from './pages/LiensUtiles';
 import Footer from './components/Footer';
 import MentionsLegales from './pages/MentionsLegales';
+import Seo from './components/Seo';
+import CookieBanner from './components/CookieBanner';
+import { trackContactClick } from './analytics/ga';
 
 function App() {
   useEffect(() => {
     const trackClick = (event) => {
-      const href = event.target.href;
+      const target = event.target.closest('a');
+      const href = target?.href;
       if (href && (href.startsWith('mailto:') || href.startsWith('tel:') || href.includes('google.com/maps'))) {
-        window.gtag('event', 'click', {
-          event_category: 'Contact',
-          event_label: href,
-        });
+        trackContactClick(href);
       }
     };
 
@@ -27,6 +29,7 @@ function App() {
 
   return (
     <Router>
+      <Seo />
       <div className="app-shell">
         <Header />
         <main>
@@ -40,6 +43,8 @@ function App() {
           </Routes>
         </main>
         <Footer />
+        <CookieBanner />
+        <Analytics />
       </div>
     </Router>
   );

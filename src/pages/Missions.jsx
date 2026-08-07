@@ -1,4 +1,4 @@
-import instrumentsImage from '../assets/instruments.jpg';
+import instrumentsImage from '../assets/instruments.webp';
 import Accordion from '../components/Accordion';
 
 const MISSION_SECTIONS = [
@@ -82,6 +82,10 @@ function Missions() {
           src={instrumentsImage}
           alt="Instruments de soins infirmiers"
           className="missions-image"
+          width={800}
+          height={534}
+          loading="lazy"
+          decoding="async"
         />
       </div>
 

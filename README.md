@@ -10,8 +10,8 @@ Ce site présente les services proposés par notre équipe d'infirmiers libérau
 - **Routing** : React Router DOM
 - **Design** : CSS Modules / Google Fonts (Poppins)
 - **Hébergement** : Vercel
-- **SEO** : Balises meta + Open Graph + sitemap.xml
-- **Analytics** : Google Analytics v4
+- **SEO** : Balises meta dynamiques + Open Graph + JSON-LD + sitemap.xml
+- **Analytics** : Google Analytics v4 + Vercel Analytics
 
 ## Pages disponibles
 
