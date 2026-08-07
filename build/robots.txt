@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://cabinetinfirmiervalence81.vercel.app/sitemap.xml
