@@ -6,7 +6,7 @@ Ce site présente les services proposés par notre équipe d'infirmiers libérau
 
 ## Stack Technique
 
-- **Frontend** : React (Create React App)
+- **Frontend** : React + Vite
 - **Routing** : React Router DOM
 - **Design** : CSS Modules / Google Fonts (Poppins)
 - **Hébergement** : Vercel
