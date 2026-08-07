@@ -81,10 +81,10 @@ function MentionsLegales() {
       <section className="legal-section">
         <h2>5. Conception et réalisation</h2>
         <p>
-          Site conçu et réalisé par <strong>Hello_Dev0ps</strong>
+          Site conçu et réalisé par <strong>Hello_Dev0ps!</strong>
           <br />
           Email :{' '}
-          <a href="mailto:hello_dev0ps@protonmail.com">hello_dev0ps@protonmail.com</a>
+          <a href="mailto:hello.dev0ps81@gmail.com">hello.dev0ps81@gmail.com</a>
           <br />
           GitHub :{' '}
           <a href="https://github.com/hellOdevOps-bit" target="_blank" rel="noopener noreferrer">
