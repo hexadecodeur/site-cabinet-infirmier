@@ -10,7 +10,7 @@ function Footer() {
         {ADDRESS_SHORT}
       </p>
       <p className="footer-credit">
-        Site créé par <strong>Hello_Dev0ps</strong> —{' '}
+        Site créé par <strong>Hexa Décodeur</strong> —{' '}
         <Link to="/mentions-legales">Mentions légales</Link>
       </p>
     </footer>

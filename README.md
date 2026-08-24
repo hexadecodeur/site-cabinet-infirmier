@@ -1,6 +1,6 @@
 # Cabinet Infirmier Valence d'Albigeois
 
-Site vitrine du **Cabinet infirmier de la Place du Foirail** (SCM) à Valence d'Albigeois (81), développé par **Hello_Dev0ps**.
+Site vitrine du **Cabinet infirmier de la Place du Foirail** (SCM) à Valence d'Albigeois (81), développé par **Hexa Décodeur**.
 
 **Site :** [https://cabinetinfirmiervalence81.fr/](https://cabinetinfirmiervalence81.fr/)
 
