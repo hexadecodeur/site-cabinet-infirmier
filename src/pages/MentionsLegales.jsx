@@ -105,8 +105,8 @@ function MentionsLegales() {
           <a href="mailto:hexadecodeur@gmail.com">hexadecodeur@gmail.com</a>
           <br />
           GitHub :{' '}
-          <a href="https://github.com/hellOdevOps-bit" target="_blank" rel="noopener noreferrer">
-            hellOdevOps-bit
+          <a href="https://github.com/hexadecodeur" target="_blank" rel="noopener noreferrer">
+            Hexa Décodeur
           </a>
         </p>
       </section>
